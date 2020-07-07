@@ -3,7 +3,7 @@
 	"name": "Logos",
 	"patterns": [
 		{
-			"match": "%(init|hookf|hook|subclass|group|class|new|ctor|dtor|end|config|orig|log)",
+			"match": "%(init|hookf|hook|subclass|group|class|new|ctor|dtor|end|config|orig|log|property|c)",
 			"name": "keyword.source.logos"
 		},
 		{

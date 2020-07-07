@@ -1,14 +1,35 @@
 {
 	"name": "logos",
 	"displayName": "Logos",
-	"description": "Logos Syntax Support",
-	"version": "0.0.1",
+	"description": "Logos Syntax Support for Visual Studio Code",
+	"version": "0.5.0",
+	"publisher": "Renaitare",
+	"icon": "assets/logos-vscode.png",
 	"engines": {
 		"vscode": "^1.46.0"
+	},
+	"author": {
+		"name": "Renaitare",
+		"email": "support@renai.me",
+		"url": "https://renai.me"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Renaitare/Logos"
+	},
+	"galleryBanner": {
+		"color": "#005577",
+		"theme": "dark"
 	},
 	"categories": [
 		"Programming Languages",
 		"Snippets"
+	],
+	"keywords": [
+		"objective-c",
+		"objective-c++",
+		"logos",
+		"vscode"
 	],
 	"activationEvents": [
 		"onLanguage:logos"

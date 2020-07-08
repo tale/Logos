@@ -4,10 +4,6 @@ import { getCompletions, getHover } from './information';
 export function activate(context: Code.ExtensionContext) {
 	console.log('Logos Syntax Support has been enabled');
 
-	let disposable = Code.commands.registerCommand('latte.helloWorld', () => {
-		Code.window.showInformationMessage('Hello World from Latte!');
-	});
-
 	const hoverProvider = Code.languages.registerHoverProvider('logos', {
 		provideHover(document: Code.TextDocument, position: Code.Position) {
 			const range = document.getWordRangeAtPosition(position);
@@ -37,7 +33,7 @@ export function activate(context: Code.ExtensionContext) {
 		'%'
 	);
 
-	context.subscriptions.push(disposable, completionProvider, hoverProvider);
+	context.subscriptions.push(completionProvider, hoverProvider);
 }
 
 export function deactivate() {}

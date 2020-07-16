@@ -35,6 +35,9 @@
 		"onLanguage:logos"
 	],
 	"main": "./out/extension.js",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"contributes": {
 		"languages": [
 			{
